@@ -1,0 +1,19 @@
+server:
+  port: 18081
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+  application:
+    name: user-provider #服务的名字,不同的应用，名字不同，如果是集群，名字需要相同
+#指定eureka服务地址
+eureka:
+  client:
+    service-url:
+      # EurekaServer的地址
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    ip-address: 127.0.0.1 #看这!指定ip地址,忘了打个ip提示选择即可
+    prefer-ip-address: true #看这!访问服务的时候,推荐使用ip,忘了打个ip提示选择即可
