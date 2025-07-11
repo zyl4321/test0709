@@ -17,4 +17,4 @@ eureka:
   instance:
     ip-address: 127.0.0.1 #看这!指定ip地址,忘了打个ip提示选择即可
     prefer-ip-address: true #看这!访问服务的时候,推荐使用ip,忘了打个ip提示选择即可
-msg: hello999
+msg: hello
